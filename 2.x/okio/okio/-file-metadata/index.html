@@ -1,0 +1,233 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>FileMetadata</title>
+<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script><link href="../../../images/icon-square.png"><link href="../../../styles/dokka-logo.css" rel="Stylesheet">  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="okio::okio/FileMetadata///PointingToDeclaration//1671742964">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../../index.html">okio</a>/<a href="../index.html">okio</a>/<a href="index.html">FileMetadata</a></div>
+            <div class="pull-right d-flex">
+              <div class="filter-section" id="filter-section"><button class="platform-tag platform-selector common-like" data-active="" data-filter=":okio:dokkaHtml/commonMain">common</button></div>
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>File</span><wbr></wbr><span>Metadata</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><div class="symbol monospace">class <a href="index.html">FileMetadata</a>(isRegularFile: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, isDirectory: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, symlinkTarget: <a href="../-path/index.html">Path</a>?, size: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>?, createdAtMillis: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>?, lastModifiedAtMillis: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>?, lastAccessedAtMillis: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Description of a file or another object referenced by a path.</p><p class="paragraph">In simple use a file system is a mechanism for organizing files and directories on a local storage device. In practice file systems are more capable and their contents more varied. For example, a path may refer to:</p><ul><li><p class="paragraph">An operating system process that consumes data, produces data, or both. For example, reading     from the <code>/dev/urandom</code> file on Linux returns a unique sequence of pseudorandom bytes to each     reader.</p></li><li><p class="paragraph">A stream that connects a pair of programs together. A pipe is a special file that a producing     program writes to and a consuming program reads from. Both programs operate concurrently. The     size of a pipe is not well defined: the writer can write as much data as the reader is able to     read.</p></li><li><p class="paragraph">A file on a remote file system. The performance and availability of remote files may be quite     different from that of local files!</p></li><li><p class="paragraph">A symbolic link (symlink) to another path. When attempting to access this path the file system     will follow the link and return data from the target path.</p></li><li><p class="paragraph">The same content as another path without a symlink. On UNIX file systems an inode is an     anonymous handle to a file's content, and multiple paths may target the same inode without any     other relationship to one another. A consequence of this design is that a directory with three     1 GiB files may only need 1 GiB on the storage device.</p></li></ul><p class="paragraph">This class does not attempt to model these rich file system features! It exposes a limited view useful for programs with only basic file system needs. Be cautious of the potential consequences of special files when writing programs that operate on a file system.</p><p class="paragraph">File metadata is subject to change, and code that operates on file systems should defend against changes to the file that occur between reading metadata and subsequent operations.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="327400077%2FConstructors%2F1671742964" anchor-label="FileMetadata" id="327400077%2FConstructors%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-file-metadata.html">FileMetadata</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="327400077%2FConstructors%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><div class="symbol monospace">fun <a href="-file-metadata.html">FileMetadata</a>(isRegularFile: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, isDirectory: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, symlinkTarget: <a href="../-path/index.html">Path</a>? = null, size: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null, createdAtMillis: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null, lastModifiedAtMillis: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null, lastAccessedAtMillis: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="-777736965%2FFunctions%2F1671742964" anchor-label="equals" id="-777736965%2FFunctions%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="equals.html">equals</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-777736965%2FFunctions%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><div class="symbol monospace">open operator override fun <a href="equals.html">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1469638027%2FFunctions%2F1671742964" anchor-label="hashCode" id="1469638027%2FFunctions%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="hash-code.html">hashCode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1469638027%2FFunctions%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><div class="symbol monospace">open override fun <a href="hash-code.html">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1291471962%2FFunctions%2F1671742964" anchor-label="toString" id="1291471962%2FFunctions%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="to-string.html">toString</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1291471962%2FFunctions%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><div class="symbol monospace">open override fun <a href="to-string.html">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="1521476051%2FProperties%2F1671742964" anchor-label="createdAtMillis" id="1521476051%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="created-at-millis.html">createdAtMillis</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1521476051%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="1521476051%2FProperties%2F1671742964" anchor-label="createdAtMillis" id="1521476051%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="created-at-millis.html">createdAtMillis</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1521476051%2FProperties%2F1671742964" anchor-label="createdAtMillis" id="1521476051%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>Returns the system time of the host computer when this file was created, if the host file system supports this feature.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2045155695%2FProperties%2F1671742964" anchor-label="isDirectory" id="-2045155695%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-directory.html">isDirectory</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2045155695%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="-2045155695%2FProperties%2F1671742964" anchor-label="isDirectory" id="-2045155695%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="is-directory.html">isDirectory</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2045155695%2FProperties%2F1671742964" anchor-label="isDirectory" id="-2045155695%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>True if the path refers to a directory that contains 0 or more child paths.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2054877158%2FProperties%2F1671742964" anchor-label="isRegularFile" id="2054877158%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-regular-file.html">isRegularFile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2054877158%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="2054877158%2FProperties%2F1671742964" anchor-label="isRegularFile" id="2054877158%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="is-regular-file.html">isRegularFile</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2054877158%2FProperties%2F1671742964" anchor-label="isRegularFile" id="2054877158%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>True if this file is a container of bytes.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-742641964%2FProperties%2F1671742964" anchor-label="lastAccessedAtMillis" id="-742641964%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="last-accessed-at-millis.html">lastAccessedAtMillis</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-742641964%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="-742641964%2FProperties%2F1671742964" anchor-label="lastAccessedAtMillis" id="-742641964%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="last-accessed-at-millis.html">lastAccessedAtMillis</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-742641964%2FProperties%2F1671742964" anchor-label="lastAccessedAtMillis" id="-742641964%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>Returns the system time of the host computer when this file was most recently read or written.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1156773326%2FProperties%2F1671742964" anchor-label="lastModifiedAtMillis" id="1156773326%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="last-modified-at-millis.html">lastModifiedAtMillis</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1156773326%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="1156773326%2FProperties%2F1671742964" anchor-label="lastModifiedAtMillis" id="1156773326%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="last-modified-at-millis.html">lastModifiedAtMillis</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1156773326%2FProperties%2F1671742964" anchor-label="lastModifiedAtMillis" id="1156773326%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>Returns the system time of the host computer when this file was most recently written.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-61018907%2FProperties%2F1671742964" anchor-label="size" id="-61018907%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="size.html">size</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-61018907%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="-61018907%2FProperties%2F1671742964" anchor-label="size" id="-61018907%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="size.html">size</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-61018907%2FProperties%2F1671742964" anchor-label="size" id="-61018907%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>Returns the number of bytes readable from this file.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-122066974%2FProperties%2F1671742964" anchor-label="symlinkTarget" id="-122066974%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>
+                <div class="table-row" data-filterable-current=":okio:dokkaHtml/commonMain" data-filterable-set=":okio:dokkaHtml/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="symlink-target.html">symlinkTarget</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-122066974%2FProperties%2F1671742964"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="platform-tags ">
+                        <div class="platform-tag common-like">common</div>
+                      </div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":okio:dokkaHtml/commonMain"><a data-name="-122066974%2FProperties%2F1671742964" anchor-label="symlinkTarget" id="-122066974%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a><div class="symbol monospace">val <a href="symlink-target.html">symlinkTarget</a>: <a href="../-path/index.html">Path</a>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-122066974%2FProperties%2F1671742964" anchor-label="symlinkTarget" id="-122066974%2FProperties%2F1671742964" data-filterable-set=":okio:dokkaHtml/commonMain"></a>The absolute or relative path that this file is a symlink to, or null if this is not a symlink.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
